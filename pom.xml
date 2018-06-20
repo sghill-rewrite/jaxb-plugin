@@ -6,7 +6,7 @@
         <version>2.36</version>
     </parent>
     <artifactId>jaxb</artifactId>
-    <version>2.3.0.1-alpha-1-SNAPSHOT</version>
+    <version>2.2.11-alpha-1-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <name>JAXB plugin</name>
     <description>Detached packaging for JAXB for more transparent Java 9+ compatibility</description>
@@ -33,17 +33,17 @@
     <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
-      <version>2.3.0</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-core</artifactId>
-      <version>2.3.0.1</version>
+      <version>2.2.11</version>
     </dependency>
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-impl</artifactId>
-      <version>2.3.0.1</version>
+      <version>2.2.11</version>
     </dependency>
   </dependencies>
 
