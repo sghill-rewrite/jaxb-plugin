@@ -29,6 +29,7 @@
    </properties>
 
   <dependencies>
+    <!-- as step 1 I'm not doing multi-release JAR yet -->
     <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
