@@ -3,10 +3,10 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>2.36</version>
+        <version>3.33</version>
     </parent>
     <artifactId>jaxb</artifactId>
-    <version>2.2.11-alpha-1-SNAPSHOT</version>
+    <version>${revision}${changelist}</version>
     <packaging>hpi</packaging>
     <name>JAXB plugin</name>
     <description>Detached packaging for JAXB for more transparent Java 9+ compatibility</description>
@@ -21,11 +21,12 @@
         <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
-       <tag>HEAD</tag>
+       <tag>${scmTag}</tag>
    </scm>
    <properties>
-       <jenkins.version>2.128</jenkins.version>
-       <jenkins-test-harness.version>2.39</jenkins-test-harness.version>
+       <revision>2.2.11-alpha-1</revision>
+       <changelist>-SNAPSHOT</changelist>
+       <jenkins.version>2.160</jenkins.version>
        <java.level>8</java.level>
    </properties>
 
