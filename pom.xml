@@ -5,6 +5,7 @@
         <artifactId>plugin</artifactId>
         <version>3.33</version>
     </parent>
+    <groupId>io.jenkins.plugins</groupId>
     <artifactId>jaxb</artifactId>
     <version>${revision}${changelist}</version>
     <packaging>hpi</packaging>
