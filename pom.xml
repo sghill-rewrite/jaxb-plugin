@@ -27,7 +27,7 @@
    <properties>
        <revision>2.2.11-alpha-1</revision>
        <changelist>-SNAPSHOT</changelist>
-       <jenkins.version>2.160</jenkins.version>
+       <jenkins.version>2.60.3</jenkins.version>
        <java.level>8</java.level>
    </properties>
 
