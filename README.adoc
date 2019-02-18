@@ -1,3 +1,10 @@
 = JAXB API Plugin
 
-TODO
+This plugin bundles JAXB libraries, and is a so-called _library plugin_.
+
+It is currently not recommended to depend on it from your plugin.
+It is designed to be automatically added as a dependency when running Jenkins on a Java 11 runtime, so that plugins using JAXB API do not fail on Java 11 (given JAXB libraries were removed from the JDK in Java 9).
+
+See the link:CHANGELOG.adoc[CHANGELOG].
+
+See its plugins' website page on https://plugins.jenkins.io/jaxb
