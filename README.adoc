@@ -2,8 +2,12 @@
 
 This plugin bundles JAXB libraries, and is a so-called _library plugin_.
 
-It is currently not recommended to depend on it from your plugin.
-It is designed to be automatically added as a dependency when running Jenkins on a Java 11 runtime, so that plugins using JAXB API do not fail on Java 11 (given JAXB libraries were removed from the JDK in Java 9).
+JAXB libraries were removed from the JDK in Java 9.
+For a plugin using the JAXB API and built against older LTS lines,
+it is designed to be automatically added as a dependency when running Jenkins on a Java 11+ runtime,
+so that the plugin does not fail to link.
+A plugin using the JAXB API built against the 2.164.x or newer LTS line
+should declare an explicit dependency on this library plugin.
 
 See the link:CHANGELOG.adoc[CHANGELOG].
 
