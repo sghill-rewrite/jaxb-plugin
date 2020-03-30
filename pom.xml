@@ -11,7 +11,7 @@
     <packaging>hpi</packaging>
     <name>JAXB plugin</name>
     <description>Detached packaging for JAXB for more transparent Java 9+ compatibility</description>
-    <url>http://wiki.jenkins-ci.org/display/JENKINS/JAXB+Plugin</url>
+    <url>https://github.com/jenkinsci/jaxb-plugin</url>
     <licenses>
         <license>
             <name>MIT</name>
