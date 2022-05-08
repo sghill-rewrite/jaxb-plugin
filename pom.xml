@@ -27,7 +27,7 @@
         <tag>${scmTag}</tag>
     </scm>
     <properties>
-        <revision>2.3.x</revision>
+        <revision>2.3.6-1</revision>
         <changelist>-SNAPSHOT</changelist>
         <jenkins.version>2.263.1</jenkins.version>
         <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
@@ -51,7 +51,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- as step 1 I'm not doing multi-release JAR yet -->
         <dependency>
             <groupId>io.jenkins.plugins</groupId>
             <artifactId>javax-activation-api</artifactId>
