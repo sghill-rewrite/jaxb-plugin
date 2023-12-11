@@ -20,7 +20,8 @@ import org.jvnet.hudson.test.RealJenkinsRule;
 
 public class JAXBContextTest {
 
-    @Rule public RealJenkinsRule rr = new RealJenkinsRule();
+    @Rule
+    public RealJenkinsRule rr = new RealJenkinsRule();
 
     @Test
     public void smokes() throws Throwable {
@@ -39,7 +40,8 @@ public class JAXBContextTest {
         context.createMarshaller().marshal(book, baos);
         String xml = baos.toString(StandardCharsets.US_ASCII.name());
         assertThat(xml, containsString("<book id=\"1\"><title>Guide to JAXB</title></book>"));
-        Book book2 = (Book) context.createUnmarshaller().unmarshal(new ByteArrayInputStream(xml.getBytes(StandardCharsets.US_ASCII)));
+        Book book2 = (Book) context.createUnmarshaller()
+                .unmarshal(new ByteArrayInputStream(xml.getBytes(StandardCharsets.US_ASCII)));
         assertEquals(book.getId(), book2.getId());
         assertEquals(book.getName(), book2.getName());
     }
